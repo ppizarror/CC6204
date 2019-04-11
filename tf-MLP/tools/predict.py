@@ -18,6 +18,6 @@ if __name__ == "__main__":
     #         }
     predictor = fp.FastPredictor(params)
     while True:
-        filename = input("Image: ")
+        filename = input("Image: ").replace('"', '')
         prediction = predictor.predict(filename)
         print(prediction)
